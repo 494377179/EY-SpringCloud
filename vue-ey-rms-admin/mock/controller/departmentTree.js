@@ -1,0 +1,120 @@
+const data = [
+  {
+    id: '1',
+    parentId: '0',
+    name: '华东',
+    title: '华东',
+    text: '华东',
+    value: '1',
+    rank: 1,
+    children: [
+      {
+        id: '11',
+        parentId: '1',
+        name: '上海船代',
+        title: '上海船代',
+        text: '上海船代',
+        value: '11',
+        rank: 2,
+      },
+    ],
+  },
+  {
+    id: '2',
+    parentId: '0',
+    name: '华北',
+    title: '华北',
+    text: '华北',
+    value: '2',
+    rank: 1,
+    children: [
+      {
+        id: '21',
+        parentId: '2',
+        name: '长江公司',
+        title: '长江公司',
+        text: '长江公司',
+        value: '21',
+        rank: 2,
+      },
+    ],
+  },
+  {
+    id: '3',
+    parentId: '0',
+    name: '华中',
+    title: '华中',
+    text: '华中',
+    value: '3',
+    rank: 1,
+    children: [
+      {
+        id: '31',
+        parentId: '3',
+        name: '集海事业部',
+        title: '集海事业部',
+        text: '集海事业部',
+        value: '31',
+        rank: 2,
+      },
+    ],
+  },
+  {
+    id: '4',
+    parentId: '0',
+    name: '华南',
+    title: '华南',
+    text: '华南',
+    value: '4',
+    rank: 1,
+    children: [
+      {
+        id: '41',
+        parentId: '4',
+        name: '广州分公司',
+        title: '广州分公司',
+        text: '广州分公司',
+        value: '41',
+        rank: 2,
+      },
+      {
+        id: '42',
+        parentId: '4',
+        name: '广西分公司',
+        title: '广西分公司',
+        text: '广西分公司',
+        value: '42',
+        rank: 2,
+      },
+    ],
+  },
+  {
+    id: '5',
+    parentId: '0',
+    name: '外运股份',
+    title: '外运股份',
+    text: '外运股份',
+    value: '5',
+    rank: 1,
+    children: [
+      {
+        id: '51',
+        parentId: '5',
+        name: '外运股份公司',
+        title: '外运股份公司',
+        text: '外运股份公司',
+        value: '51',
+        rank: 2,
+      },
+    ],
+  },
+]
+module.exports = [
+  {
+    url: '/departmentTree/list',
+    type: 'post',
+    response() {
+      return { code: 200, msg: 'success', data }
+    },
+  },
+]

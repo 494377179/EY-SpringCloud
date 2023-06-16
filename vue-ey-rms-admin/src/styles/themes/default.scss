@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+//卡片组件header样式
+.card-header{
+    color:#007bff;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+//卡片组件带竖条header样式
+.card-header-border-left-secondary{
+    border-left: 0.25rem solid #858796;
+    padding-left: 2%;
+}
+
+//按钮primary样式
+.el-button--primary{
+    background-color: rgb(0,105,193);
+    border-color: rgb(0,105,193);
+}
+
+//按钮success样式
+.el-button--success{
+    background-color: rgb(15,150,56);
+    border-color: rgb(15,150,56);
+}
+
+//按钮danger样式
+.el-button--danger{
+    background-color: rgb(212,25,15);
+    border-color: rgb(212,25,15);
+}
+
+//按钮info样式
+.el-button--info{
+    background-color:#17a2b8;
+    border-color:#17a2b8;
+}
+
+/* dialog框居中显示---开始 */
+.el-dialog{
+    display: flex;
+    flex-direction: column;
+    margin:0 !important;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.el-dialog .el-dialog__body{
+    flex:1;
+    overflow: auto;
+}
+/* dialog框居中显示---结束 */
